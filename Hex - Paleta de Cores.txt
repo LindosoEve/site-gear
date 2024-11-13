@@ -1,0 +1,5 @@
+- Royal Purple:   #6A0DAD | RGB (106, 13, 173)
+- Medium Orchid:  #BE6CF6 | RGB (190, 108, 246)
+- Mauve:          #E2C0FA | RGB (226, 192, 250)
+
+PARA MONTAR PALETA DE CORES, ACESSAR: https://mycolor.space/ 
