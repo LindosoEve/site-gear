@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="quemsomos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="site.js" defer></script>
     <title>GEAR</title>
 </head>
 <body>
-    <!-- cabeçalho -->
     <header> 
         <nav id = "nav-bar">
             <div class="logo"> <!--Logo-->
@@ -18,7 +17,7 @@
 
             <ul id = "nav_list"> <!--Itens no cabeçalho-->
                 <li class="nav-item">
-                    <a href="../quemsomos/quemsomos.html">Quem somos?</a>
+                    <a id ="quem"href="../quemsomos/quemsomos.html">Quem somos?</a>
                 </li>
 
                 <li class="nav-item">
@@ -41,29 +40,22 @@
     </header>
 
     <main>
-        <section class="section-left"> <!--Conteudo principal-->
-            <h1>Bem vindo(a)!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Rerum, porro! Quos cupiditate maiores debitis repellendus 
-                aut molestiae omnis fugiat itaque aliquid cum hic 
-                nisirepudiandae nulla, libero corporis sit. Id.</p>
-            <button>Saber mais!</button>
-            <img id = "gatinho" src="../imgs/gatinho.png" alt="">
-        </section>
-
-        <section class="section-right">
-            <div class="carrossel">
-                <div class="container" id="img">
-                    <img class="img-car" src="../imgs/img1_car.jpg" alt="">
-                    <img class="img-car" src="../imgs/img2_car.jpg" alt="">
-                    <img class="img-car" src="../imgs/img3_car.jpg" alt="">
-                    <img class="img-car" src="../imgs/img4_car.jpg" alt="">
-                    <img class="img-car" src="../imgs/img5_car.jpg" alt="">
-                    <img class="img-car" src="../imgs/img6_car.jpg" alt="">
-                </div>
+       <div class="diagonal-split">
+            <div class="content content-img">
+                <img src="../imgs/img1_car.jpg" alt="">
             </div>
-        </section>
-    </main> 
+
+            <div class="content content-text">
+                <h1>Quem somos?</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                    elit. Minima impedit tempore cum nisi, unde nemo eum 
+                    obcaecati dolores architecto veniam perspiciatis rem 
+                    consequuntur quos maiores assumenda, atque harum 
+                    laborum? Odio?</p>
+                <img src="../imgs/cat.png" alt="">
+            </div>
+       </div>
+    </main>
 
     <footer> <!---Rodapé-->
         <div id = "footer-itens">
