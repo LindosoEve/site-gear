@@ -1,0 +1,46 @@
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    height: 8vh;
+}
+
+#footer-itens{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+}
+
+.social-media-buttons{
+    width:30%;
+}
+
+.social-media-buttons a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    transition: 0.3s all;
+}
+
+.social-media-buttons a i{
+    font-size: 20px;
+}
+
+.social-media-buttons a h2{
+    font-size: 18px;
+}
+
+.social-media-buttons a:hover {
+    color:#6A0DAD;
+}

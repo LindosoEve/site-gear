@@ -13,52 +13,6 @@ body {
     background-attachment: fixed;
 }
 
-header {
-    width: 100%;
-    top: 0;
-    border-bottom: 1px solid #6A0DAD;
-    background-color: #ffffffe5; 
-    position: relative;
-    z-index: 1;
-}
-
-nav {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-
-nav .logo {
-    width: 300px;
-    height: auto;
-}
-
-nav .logo img {
-    width: 100%;
-    height: auto;
-}
-
-#nav_list {
-    width: 70%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-
-.nav-item a {
-    text-decoration: none;
-    color:  #6A0DAD ;
-    font-weight: 600;
-    font-size: 20px; 
-    transition: 0.3s all;
-}
-
-.nav-item a:hover {
-    color:#BE6CF6;
-    font-size: 25px;
-}
-
 
 main {
     margin-top: 40px;
@@ -155,52 +109,6 @@ main {
 
 }
 
-footer {
-    position: relative;
-    width: 100%;
-    margin-top: 30px;
-    height: 8vh;
-}
-
-#footer-itens{
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 8% 24px 8%;
-    align-items: center;
-}
-
-#copyright {
-    color: var(--color-neutral-1);
-    font-weight: 500;
-}
-
-.social-media-buttons{
-    width:30%;
-}
-
-.social-media-buttons a{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(36, 35, 35);
-    transition: 0.3s all;
-}
-
-.social-media-buttons a i{
-    font-size: 20px;
-}
-
-.social-media-buttons a h2{
-    font-size: 18px;
-}
-
-.social-media-buttons a:hover {
-    color:#6A0DAD;
-}
 
 
 
