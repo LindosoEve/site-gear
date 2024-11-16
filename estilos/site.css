@@ -74,8 +74,8 @@ main {
     position: absolute;
     width: 300px;
     height: 200px;
-    top: 500px;
-    left: 500px;
+    top: 30vw;
+    left: 27vw;
 }
 .section-right{
     width: 50%;
@@ -106,9 +106,129 @@ main {
     height: 400px;
     width: 600px;
     flex-shrink: 0;
+}
+
+/* Responsividade */
+
+/* Celulares até 576px */
+
+@media (max-width: 576px){
+    main {
+        flex-direction: column;
+    }
+
+    .section-left {
+        width: 90vw;
+    }
+
+    .section-left #gatinho {
+        display: none;
+    }
+
+    .section-right {
+        display: none;
+    }
+
+    .section-right .carrossel {
+       display: none;
+    }
 
 }
 
+/* Tablets até 790px */
 
+@media (min-width: 577px) and (max-width: 790px){
+    .section-left {
+        width: 90vw;
+    }
 
+    .section-right {
+        display: none;
+    }
 
+    .section-right .carrossel {
+        display: none;
+    }
+
+    .section-left #gatinho {
+        top: 49vw;
+        left: 65vw;
+    }
+
+    .section-left p {
+        padding: 30px;
+    }
+    .section-left #gatinho {
+        display: none;
+    }
+}
+
+/* Tablets de até 900px */
+
+@media (min-width: 791px) and (max-width: 1200px){
+    main {
+        flex-direction: column;
+    }
+    
+    .section-left {
+        width: 75vw;
+        margin-bottom: 40px;
+    }
+
+    .section-right {
+        height: 50vh;
+        width: 80vw;
+    }
+
+    .section-right .carrossel {
+        width: 600px;
+        height: 400px;
+    }
+
+    .section-left #gatinho {
+        top: 49vw;
+        left: 65vw;
+    }
+
+    .section-left p {
+        padding: 30px;
+    }
+}
+
+@media (min-width:1050px) and (max-width: 1200px) {
+    .section-left #gatinho {
+        top: 40vw;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1340px){
+    .section-left{
+        width: 35%;
+    }
+
+    .section-left p {
+        padding: 10px;
+    }
+
+    .section-left #gatinho {
+        top: 40vw;
+    }
+}
+
+@media (min-width: 1340px) and (max-width: 1500px){
+    .section-left #gatinho {
+        top: 35vw;
+    }
+}
+
+@media (min-width: 1580px) and (max-width: 1900px){
+   .section-left #gatinho {
+    width: 28vw;
+    height: 16vw;
+   } 
+    
+    .section-right {
+        width: 40%;
+        height: 50vh;
+    }
+}

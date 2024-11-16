@@ -44,3 +44,22 @@ footer {
 .social-media-buttons a:hover {
     color:#6A0DAD;
 }
+
+/* Responsividade */
+
+/* Celulrares até 576px */
+
+@media (max-width: 790px){
+    #footer-itens{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #copyright {
+        margin-bottom: 10px;
+    }
+
+    .social-media-buttons{
+        width: 100%;
+    }
+}

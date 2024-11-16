@@ -8,7 +8,6 @@ header {
 }
 
 nav {
-    justify-content: space-between;
     align-items: center;
     display: flex;
 }
@@ -42,4 +41,44 @@ nav .logo img {
 .nav-item a:hover {
     color:#BE6CF6;
     font-size: 25px;
+}
+
+/* Resposividade */
+
+/* Celulares até 576px */
+
+@media (max-width: 576px){
+    header {
+        height: 15vh;
+        width: 100vw;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #nav_list {
+        width: 90vw;
+    }
+
+    .nav-item a {
+      font-size: 2.2vw;
+    }
+
+    nav .logo{
+        width: 240px;
+    }
+  }
+
+  /* Tablets até 900px */
+
+  @media (min-width: 577px) and (max-width: 900px){
+    .nav-item a{
+        font-size: 2vw;
+    }
+
+    nav .logo {
+        width: 25vw;
+    }
+
 }
