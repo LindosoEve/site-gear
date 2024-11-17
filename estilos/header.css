@@ -43,6 +43,28 @@ nav .logo img {
     font-size: 25px;
 }
 
+.dropdown-menu {
+    background-color: #f5e8fd;
+    position: absolute;
+    list-style: none;
+    border: 1px solid #6A0DAD;
+    box-shadow:  0 0 2px black;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 5%;
+}
+
+.dropdown-menu a:hover {
+    font-size: 20px;
+}
+
+#dropdown:hover .dropdown-menu{
+    display: block;
+}
+
 /* Resposividade */
 
 /* Celulares até 576px */
