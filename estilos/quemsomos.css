@@ -65,3 +65,135 @@ main {
     top: 350px;
     right: 450px;
 }
+
+
+/* Responsividade */
+
+@media (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+
+    .diagonal-split {
+        flex-direction: column;
+    }
+
+    .content-img {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .content-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .content-text {
+        position: absolute;
+        top: 100px;
+        width: 80vw;
+        height: 70%;
+        margin-top: 20vw;
+        margin-left: 8vw;
+        border-radius: 20px;
+        background-color: #6a0dadd0;
+
+    }
+
+    .content-text p {
+       text-align: justify;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .content-text img {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+    main{
+        flex-direction: column;
+    }
+
+    .diagonal-split {
+        flex-direction: column;
+    }
+
+    .content-img {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .content-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .content-text {
+        position: absolute;
+        top: 100px;
+        width: 80vw;
+        height: 70%;
+        margin-top: 10vw;
+        margin-left: 8vw;
+        border-radius: 20px;
+        background-color: #6a0dadd0;
+
+    }
+
+    .content-text p {
+       text-align: justify;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .content-text img {
+        top: 80%;
+        left: 25%;
+    }
+
+
+}
+
+
+@media (min-width: 1001px) and (max-width: 1400px){
+    .content-text{
+        text-align: justify;
+    }
+    .content-text img {
+        top: 70%;
+        left: -20%;
+
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1900px){
+    .content-text{
+        text-align: justify;
+    }
+    .content-text img {
+        top: 70%;
+        left: -10%;
+        width: 30vw;
+        height: 40vh;
+    }
+}
