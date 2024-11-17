@@ -25,8 +25,8 @@ main {
 .section-marketing, .section-sistemas {
     width: 90%;
     height: 40vh;
-    margin: 150px;
-    margin-top: 100px;
+    margin: 10%;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,7 +36,6 @@ main {
     position: relative;
     width: 90%;
     height: 70vh;
-    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +46,7 @@ main {
     position: absolute;
     width: 60%;
     height: 500px;
-    left: 30px;
+    left: 5%;
     top: 0;
 }
 
@@ -74,17 +73,6 @@ main {
     font-size: 17px;
 }
 
-/* .section-sistemas .img-sistemas{
-    width: 45%;
-}
-
-.section-sistemas .img-sistemas img {
-    width: 400px;
-    height: 400px;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
-
 .text{
     width: 40%; 
 }
@@ -98,36 +86,267 @@ h1{
 .text p{
     height: 40vh;
     background-color: #BE6CF6;
-    padding: 40px;
+    padding: 5%;
     border-radius: 20px;
     border: 2px dashed black;
     color:white;
 }
 
-/* .section-estruturas .img-estruturas{
-    width: 35%;
-}
-
-.section-estruturas .img-estruturas img{
-    width: 400px;
-    height: 400px;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.section-sistemas .img-sistemas,
-.section-estruturas .img-estruturas {
-    width: 40%; /* Uniformize a largura das classes */
-
 .section-sistemas .img-sistemas img,
 .section-estruturas .img-estruturas img,
 .section-marketing .img-marketing img,
 .section-gestao .img-gestao img {
-    width: 450px;
-    height: 450px;
+    width: 30vw;
+    height: 45vh;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
 }
+
+/* Responsividade */
+
+@media (max-width: 576px){
+    .section-introducao{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-introducao img {
+        position: absolute;
+        width: 90%;
+        height: 30vh;
+    }
+
+    .section-introducao #text {
+        position: relative;
+        width: 100%;
+    }
+
+    .section-introducao #text h1 {
+        position: absolute;
+        margin-top: 5vw;
+        left: 5vw;
+        width: 100%;
+    }
+
+    .section-introducao #text p {
+        margin-left: 15%;
+        margin-top: 25%;
+    }
+
+    .section-estruturas, 
+    .section-gestao,
+    .section-marketing,
+    .section-sistemas{
+        flex-direction: column;
+        margin-bottom: 55vh;
+        margin-top: 3vh;
+    }
+
+    .section-sistemas .img-sistemas img {
+        position: absolute;
+        width: 70%;
+        height: 35vh;
+        border-radius: 20%;
+        top: 130%;
+        left: 15%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        position: absolute;
+        width: 70%;
+        height: 35vh;
+        border-radius: 20%;
+        top: 230%;
+        left: 15%;
+    }
+
+    .section-marketing .img-marketing img {
+        position: absolute;
+        width: 70%;
+        height: 35vh;
+        border-radius: 20%;
+        top: 330%;
+        left: 15%;
+    }
+
+    .section-gestao .img-gestao img {
+        position: absolute;
+        width: 70%;
+        height: 35vh;
+        border-radius: 20%;
+        top: 427%;
+        left: 15%;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 790px){
+    .section-introducao{
+        flex-direction: column;
+    }
+
+    .section-introducao img {
+        position: absolute;
+        width: 90%;
+        height: 40vh;
+    }
+
+    .section-introducao #text {
+        position: relative;
+        width: 100%;
+    }
+
+    .section-introducao #text h1 {
+        position: absolute;
+        margin-top: 5vw;
+        left: 5vw;
+        width: 100%;
+    }
+
+    .section-introducao #text p {
+        margin-left: 15%;
+        margin-top: 17%;
+    }
+
+    .section-estruturas, 
+    .section-gestao,
+    .section-marketing,
+    .section-sistemas{
+        flex-direction: column;
+        margin-bottom: 55vh;
+        margin-top: 7vh;
+    }
+
+    .section-sistemas .img-sistemas img {
+        position: absolute;
+        width: 70%;
+        height: 40vh;
+        border-radius: 20%;
+        top: 127%;
+        left: 15%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        position: absolute;
+        width: 70%;
+        height: 40vh;
+        border-radius: 20%;
+        top: 230%;
+        left: 15%;
+    }
+
+    .section-marketing .img-marketing img {
+        position: absolute;
+        width: 70%;
+        height: 40vh;
+        border-radius: 20%;
+        top: 330%;
+        left: 15%;
+    }
+
+    .section-gestao .img-gestao img {
+        position: absolute;
+        width: 70%;
+        height: 40vh;
+        border-radius: 20%;
+        top: 433%;
+        left: 15%;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 791px) and (max-width: 1000px){
+    .section-introducao{
+        height: 55vh;
+    }
+
+    .section-introducao img {
+        width: 55%;
+        height: 340px;
+        left: 1%;
+    }
+
+    .section-introducao #text {
+        width: 40%;
+        right: -1%;
+        top: 10%;
+    }
+
+    .section-sistemas .img-sistemas img,
+    .section-estruturas .img-estruturas img,
+    .section-marketing .img-marketing img,
+    .section-gestao .img-gestao img  {
+        width: 40vw;
+         
+    }
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas{
+        margin: 13%;
+    }
+
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    .section-introducao{
+        height: 55vh;
+    }
+
+    .section-introducao img {
+        width: 55%;
+        height: 340px;
+        left: 1%;
+    }
+
+    .section-introducao #text {
+        width: 40%;
+        right: -1%;
+        top: 10%;
+    }
+
+    .section-sistemas .img-sistemas img,
+    .section-estruturas .img-estruturas img,
+    .section-marketing .img-marketing img,
+    .section-gestao .img-gestao img  {
+        width: 40vw;
+         
+    }
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas{
+        margin: 13%;
+    }
+
+}
+
+@media (min-width: 1500px) and (max-width: 1900px){
+    
+    .section-sistemas .img-sistemas img,
+    .section-estruturas .img-estruturas img,
+    .section-marketing .img-marketing img,
+    .section-gestao .img-gestao img  {
+        width: 35vw;
+        height: 60vh;
+         
+    }
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas{
+        margin: 9%;
+    }
+
+}
+
+
 
 
 
