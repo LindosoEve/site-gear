@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-image: url('../imgs/fundo2_back.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.section01 {
+    background-color: #E2C0FA;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.section01 .img-sumo {
+    width: 30%;
+    height: 30vh;
+}
+
+.section01 .img-sumo img {
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #BE6CF6, 0 0 20px #BE6CF6, 0 0 30px #6A0DAD;
+}
+
+
+.section01 .text-sumo {
+    width: 50%;
+    text-align: justify;
+}
+
+.section01 .text-sumo p {
+    line-height: 1.8;
+}
+
+.section02 {
+    background-color: #E2C0FA;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12%;
+    margin-bottom: 3%;
+}
+
+.section02 .desenho-sumo{
+    position: relative;
+    width: auto; /* Permite que a imagem ajuste seu tamanho */
+    height: auto;
+    display: flex;
+    justify-content: center; /* Alinha a imagem no centro */
+    align-items: center;
+}
+
+.section02 .desenho-sumo img {
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    right: -100px;
+
+}
+
+.section02 .text-sumo {
+    width: 30%;
+    text-align: justify;
+}
+
+.section02 .text-sumo p {
+    line-height: 1.8;
+}
