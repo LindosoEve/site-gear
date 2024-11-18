@@ -104,3 +104,10 @@ nav .logo img {
     }
 
 }
+
+    @media (max-height: 700px){
+        header {
+            height: 20vh;
+        }
+    }
+

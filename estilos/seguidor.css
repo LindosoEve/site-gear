@@ -94,3 +94,9 @@ h1 {
 .section02 .text-seg p {
     line-height: 1.8;
 }
+
+/* Responsividade */
+
+@media (max-width: 576px){
+    
+}

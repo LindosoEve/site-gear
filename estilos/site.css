@@ -52,10 +52,10 @@ main {
 .section-left button{
     position: relative;
     width: 50%;
-    height: 6cap;
+    height: 7vh;
     background-color: #ffffffc6;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 7%;
     color: #000;
     border-radius: 20px;
     font-size: 15px;
@@ -115,10 +115,18 @@ main {
 @media (max-width: 576px){
     main {
         flex-direction: column;
+        display: flex;
+        align-items: center;
     }
 
     .section-left {
         width: 90vw;
+        height: 70vh;
+        margin-right: 5%;
+    }
+
+    .section-left button {
+        height: 15%;
     }
 
     .section-left #gatinho {
@@ -231,4 +239,35 @@ main {
         width: 40%;
         height: 50vh;
     }
+}
+
+@media (max-height: 700px)  {
+    main {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .section-left {
+        width: 90vw;
+        height: 80vh;
+        margin-right: 5%;
+    }
+
+    .section-left button {
+        height: 9vh;
+    }
+
+    .section-left #gatinho {
+        display: none;
+    }
+
+    .section-right {
+        display: none;
+    }
+
+    .section-right .carrossel {
+       display: none;
+    }
+
 }
