@@ -98,5 +98,45 @@ h1 {
 /* Responsividade */
 
 @media (max-width: 576px){
-    
+    h1 {
+        font-size: 20px;
+    }
+
+    .section01 {
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section01 .img-seguidor {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .section01 .text-seguidor{
+        width: 80%;
+    }
+
+    .section02 {
+        margin-top: 6%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section02 .desenho-seguidor{
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .section02 .desenho-seguidor img{
+        position: absolute;
+        left: -95%;
+        top: -20%;
+        width: 160vw;
+    }
+
+    .section02 .text-seg {
+        width: 80%;
+    }
 }
