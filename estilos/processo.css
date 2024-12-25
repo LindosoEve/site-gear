@@ -127,4 +127,383 @@ main {
     height: 550px;
 }
 
+@media (max-width: 700px){
+    .container{
+        width: 85%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
 
+    .container h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+    }
+
+    .container button {
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       overflow: hidden;
+       width: 0;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 900px){
+    .container{
+        width: 65%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+    }
+
+    .container button {
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       width: 200px;
+    }
+
+    .imagens #torreta {
+       display: none;
+    }
+
+    .imagens #gat{
+        position: absolute;
+        left: 140px;
+        width: 300px;
+        height: 400px; 
+        top: -300px;
+    }
+
+    .imagens #seila{
+        display: none;
+    }
+
+    .imagens #robo {
+        left: -400px;
+    }
+} 
+
+@media (min-width: 901px) and (max-width: 1100px){
+    .container{
+        width: 65%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+    }
+
+    .container button {
+        width: 60%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       width: 200px;
+    }
+
+    .imagens #torreta {
+       display: none;
+    }
+
+    .imagens #gat{
+        position: absolute;
+        left: 140px;
+        width: 400px;
+        height: 550px; 
+        top: -400px;
+    }
+
+    .imagens #seila{
+        display: none;
+    }
+
+    .imagens #robo {
+        left: -400px;
+    }
+} 
+
+@media (min-width: 1101px) and (max-width: 1200px){
+    .container{
+        width: 55%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       width: 200px;
+    }
+
+    .imagens #torreta {
+       display: none;
+    }
+
+    .imagens #gat{
+        position: absolute;
+        left: 140px;
+        width: 400px;
+        height: 550px; 
+        top: -400px;
+    }
+
+    .imagens #seila{
+        display: none;
+    }
+
+    .imagens #robo {
+        left: -400px;
+    }
+} 
+
+@media (min-width: 1201px) and (max-width: 1400px){
+    .container{
+        width: 40%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       width: 200px;
+    }
+
+    .imagens #torreta {
+       display: none;
+    }
+
+    .imagens #gat{
+        position: absolute;
+        left: 140px;
+        width: 400px;
+        height: 550px; 
+        top: -400px;
+    }
+
+    .imagens #seila{
+       display: none;
+    }
+
+    .imagens #robo {
+        left: -400px;
+    }
+}  
+
+@media (min-width: 1401px) and (max-width: 1600px){
+    .container{
+        width: 40%;
+        height: 180vh;
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .container h3{
+        margin-top: 7%;
+        width: 85%;
+        text-align: justify;
+    }
+
+    .container h2{
+        margin-top: 7%;
+    }
+
+    .container p {
+        width: 85%;
+        text-align: justify;
+        margin-top: 7%;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .container img {
+        width: 75%;
+        margin-top: 10%;
+    }
+
+    .imagens {
+       width: 200px;
+    }
+
+    .imagens #torreta {
+        display: none;
+    }
+
+    .imagens #gat{
+        position: absolute;
+        left: 140px;
+        width: 500px;
+        height: 550px; 
+        top: -400px;
+    }
+
+    .imagens #seila{
+       display: none;
+    }
+
+    .imagens #robo {
+        left: -400px;
+    }
+}  
+
+@media (max-height: 660px) and (min-width: 701px) and (max-width: 1400px){
+    .container {
+        height: 210vh;
+    }
+} 
+
+@media (min-height: 661px) and (max-height: 750px) and (min-width: 1100px) and (max-width: 1200px){
+    .container {
+        height: 190vh;
+        width: 60%;
+    }
+}
+
+@media (min-height: 751px) and (max-height: 850px) and (min-width: 367px) and (max-width: 700px) {
+    .container {
+        height: 160vh;
+    }
+}
