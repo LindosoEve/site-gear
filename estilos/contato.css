@@ -100,3 +100,114 @@ h1 {
     color: white;
     font-size: 20px;
 }
+
+/* Responsividade */
+
+@media (max-width: 600px){
+    .whatsapp {
+        width: 85%;
+        height: 10vh;
+    }
+
+    .whatsapp h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .whatsapp button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+
+    .email {
+        width: 85%;
+        height: 10vh;
+    }
+
+    .email h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .email button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    .whatsapp {
+        width: 55%;
+        height: 10vh;
+    }
+
+    .whatsapp h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .whatsapp button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+
+    .email {
+        width: 55%;
+        height: 10vh;
+    }
+
+    .email h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .email button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1450px){
+    .whatsapp {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .whatsapp h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .whatsapp button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+
+    .email {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .email h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .email button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+}
+
