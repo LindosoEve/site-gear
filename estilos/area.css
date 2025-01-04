@@ -35,7 +35,7 @@ main {
 .section-introducao{
     position: relative;
     width: 90%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ main {
 .section-introducao img{
     position: absolute;
     width: 60%;
-    height: 500px;
+    height: auto;
     left: 5%;
     top: 0;
 }
@@ -148,7 +148,7 @@ h1{
         width: 70%;
         height: 35vh;
         border-radius: 20%;
-        top: 130%;
+        top: 140%;
         left: 15%;
     }
 
@@ -157,7 +157,7 @@ h1{
         width: 70%;
         height: 35vh;
         border-radius: 20%;
-        top: 230%;
+        top: 240%;
         left: 15%;
     }
 
@@ -166,7 +166,7 @@ h1{
         width: 70%;
         height: 35vh;
         border-radius: 20%;
-        top: 330%;
+        top: 340%;
         left: 15%;
     }
 
@@ -175,7 +175,7 @@ h1{
         width: 70%;
         height: 35vh;
         border-radius: 20%;
-        top: 427%;
+        top: 437%;
         left: 15%;
     }
 
@@ -225,39 +225,38 @@ h1{
     .section-sistemas .img-sistemas img {
         position: absolute;
         width: 70%;
-        height: 40vh;
+        height: 45vh;
         border-radius: 20%;
-        top: 127%;
+        top: 135%;
         left: 15%;
     }
 
     .section-estruturas .img-estruturas img {
         position: absolute;
         width: 70%;
-        height: 40vh;
+        height: 45vh;
         border-radius: 20%;
-        top: 230%;
+        top: 238%;
         left: 15%;
     }
 
     .section-marketing .img-marketing img {
         position: absolute;
         width: 70%;
-        height: 40vh;
+        height: 45vh;
         border-radius: 20%;
-        top: 330%;
+        top: 340%;
         left: 15%;
     }
 
     .section-gestao .img-gestao img {
         position: absolute;
         width: 70%;
-        height: 40vh;
+        height: 45vh;
         border-radius: 20%;
-        top: 433%;
+        top: 443%;
         left: 15%;
     }
-
     .text {
         width: 80%;
     }
@@ -346,8 +345,180 @@ h1{
 
 }
 
+@media (max-height: 660px) and (min-width: 367px) and (max-width: 380px){
+    .section-introducao {
+        height: 70vh;
+    }
 
+    .section-introducao #text h1 {
+        font-size: 18px;
+    }
 
+    .section-introducao #text p {
+        font-size: 14px;
+    }
 
+    .section-sistemas .img-sistemas img,
+    .section-estruturas .img-estruturas img,
+    .section-marketing .img-marketing img,
+    .section-gestao .img-gestao img {
+        margin-top: 16%;
+    }
+}
 
+@media (max-height: 660px) and (min-width: 381px) and (max-width: 550px){
+    .section-introducao {
+        height: 70vh;
+    }
+
+    .section-introducao #text h1 {
+        font-size: 18px;
+    }
+
+    .section-introducao #text p {
+        font-size: 14px;
+    }
+
+    .section-sistemas .img-sistemas img {
+        top: 135%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        top: 232%;
+       
+    }
+
+    .section-marketing .img-marketing img {
+        top: 331%;
+    }
+
+    .section-gestao .img-gestao img {
+        top: 430%;
+
+    } 
+}
+
+@media (max-height: 660px) and (min-width: 551px) and (max-width: 650px){
+    .section-introducao {
+        height: 70vh;
+    }
+
+    .section-introducao #text h1 {
+        font-size: 18px;
+    }
+
+    .section-introducao #text p {
+        font-size: 14px;
+    }
+
+    .section-sistemas .img-sistemas img {
+        top: 140%;
+        height: 50%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        top: 250%;
+        height: 50%;
+       
+    }
+
+    .section-marketing .img-marketing img {
+        top: 360%;
+        height: 50%;
+    }
+
+    .section-gestao .img-gestao img {
+        top: 470%;
+        height: 40%;
+
+    } 
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas {
+        margin-top: 15%;
+}
+}
+
+@media (max-height: 660px) and (min-width: 651px) and (max-width: 750px){
+    .section-introducao {
+        height: 70vh;
+    }
+
+    .section-introducao #text h1 {
+        font-size: 18px;
+    }
+
+    .section-introducao #text p {
+        font-size: 14px;
+    }
+
+    .section-sistemas .img-sistemas img {
+        top: 145%;
+        height: 50%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        top: 258%;
+        height: 50%;
+       
+    }
+
+    .section-marketing .img-marketing img {
+        top: 369%;
+        height: 50%;
+    }
+
+    .section-gestao .img-gestao img {
+        display: none;
+        width: 0;
+        height: 0;
+
+    } 
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas {
+        margin-top: 15%;
+}
+}
+
+@media (max-height: 660px) and (min-width: 751px) and (max-width: 850px){
+    .section-introducao {
+        height: 70vh;
+    }
+
+    .section-introducao #text h1 {
+        font-size: 18px;
+    }
+
+    .section-introducao #text p {
+        font-size: 14px;
+    }
+
+    .section-sistemas .img-sistemas img {
+        top: 145%;
+        height: 50%;
+    }
+
+    .section-estruturas .img-estruturas img {
+        top: 258%;
+        height: 50%;
+       
+    }
+
+    .section-marketing .img-marketing img {
+        top: 369%;
+        height: 50%;
+    }
+
+    .section-gestao .img-gestao img {
+        top: 480%;
+        height: 40%;
+
+    } 
+
+    .section-estruturas,.section-gestao,
+    .section-marketing, .section-sistemas {
+        margin-top: 15%;
+}
+}
 
