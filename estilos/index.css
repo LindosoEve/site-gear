@@ -120,7 +120,7 @@ main {
     }
 
     .section-left {
-        width: 90vw;
+        width: 90%;
         height: 70vh;
         margin-right: 5%;
     }
@@ -147,7 +147,8 @@ main {
 
 @media (min-width: 577px) and (max-width: 790px){
     .section-left {
-        width: 90vw;
+        width: 80%;
+        height: 70vh;
     }
 
     .section-right {
@@ -249,9 +250,10 @@ main {
     }
 
     .section-left {
-        width: 90vw;
+        width: 80%;
         height: 80vh;
         margin-right: 5%;
+        margin-left: 5%;
     }
 
     .section-left button {
