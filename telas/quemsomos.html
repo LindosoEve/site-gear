@@ -12,9 +12,9 @@
 <body>
     <header> 
         <nav id = "nav-bar">
-            <div class="logo">
+            <div class="logo"> <!--Logo-->
                 <a href="../index.html">
-                    <img src="../imgs/logo_horizontal_preta_sem_fundo.png" alt="">
+                    <img src="../imgs/logo horizontal preta.png" alt="">
                 </a> <!--Logo-->
             </div>
 
@@ -28,11 +28,12 @@
                 </li>
 
                 <li class="nav-item" id="dropdown">
-                    <a href="#">Projetos</a>
+                    <a href="#">Projetos <span class="triangle"></span></a>
 
                     <ul class="dropdown-menu">
                         <li><a href="seguidor.html">Robô seguidor de linha</a></li>
                         <li><a href="sumo.html">Robô sumo 3kg</a></li>
+                        <li><a href="padex.html">PADEX</a></li>
                     </ul>
                 </li>
 
@@ -44,7 +45,41 @@
                     <a href="contato.html">Contato</a>
                 </li>
             </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick = "menuShow()"><img src="../imgs/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul id = "nav_list"> <!--Itens no cabeçalho-->
+                <li class="nav-item">
+                    <a href="quemsomos.html">Quem somos?</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="area.html">Áreas</a>
+                </li>
+
+                <li class="nav-item" id="dropdown">
+                    <a href="#">Projetos <span class="triangle"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="seguidor.html">Robô seguidor de linha</a></li>
+                        <li><a href="sumo.html">Robô sumo 3kg</a></li>
+                        <li><a href="padex.html">PADEX</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="processo.html">Processo seletivo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -79,5 +114,7 @@
             </div>
         </div>
     </footer>
+
+    <script src = "../JavaS/menu.js"></script>
 </body>
 </html>

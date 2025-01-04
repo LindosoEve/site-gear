@@ -43,6 +43,24 @@ nav .logo img {
     font-size: 25px;
 }
 
+
+.nav-item .triangle {
+    display: inline-block;
+    margin-left: 5px; 
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-top: 5px solid #6A0DAD;
+}
+
+/* Adiciona rotação ao triângulo ao abrir o dropdown */
+#dropdown:hover .triangle {
+    transform: rotate(180deg); 
+    transition: transform 0.2s ease; 
+}
+
+
 .dropdown-menu {
     background-color: #f5e8fd;
     position: absolute;
@@ -50,6 +68,7 @@ nav .logo img {
     border: 1px solid #6A0DAD;
     box-shadow:  0 0 2px black;
     display: none;
+    max-width: 300px;
 }
 
 .dropdown-menu a {
@@ -65,32 +84,84 @@ nav .logo img {
     display: block;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 /* Resposividade */
 
 /* Celulares até 576px */
 
 @media (max-width: 576px){
     header {
-        height: 15vh;
+        height: auto;
         width: 100vw;
     }
 
-    nav {
-        flex-direction: column;
-    }
 
     #nav_list {
         width: 90vw;
     }
 
-    .nav-item a {
-      font-size: 2.5vw;
+    .nav-item {
+        display: none;
     }
 
     nav .logo{
-        width: 240px;
+        width: 400vw;
     }
-  }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-right: 10%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-right: 10%;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+        border-top: 1px solid #6A0DAD;
+    }
+
+    .opens {
+        display: block;
+    }
+
+    /* Esconda o dropdown-menu no mobile por padrão */
+    .mobile-menu #dropdown .dropdown-menu {
+         display: none;
+         position: relative; /* Para evitar sobreposição no mobile */
+         right: -30px;/* Remove alinhamento à direita no mobile *//* Remove alinhamento vertical no mobile */
+         margin-top: 10px;
+    }
+
+/* Exiba o dropdown-menu no mobile apenas quando a classe 'open' for adicionada */
+    .mobile-menu #dropdown.opens .dropdown-menu {
+         display: block;
+    }
+    
+}
 
   /* Tablets até 900px */
 

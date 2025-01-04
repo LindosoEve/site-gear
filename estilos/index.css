@@ -78,7 +78,7 @@ main {
     left: 27vw;
 }
 .section-right{
-    width: 50%;
+    width: 40%;
     height: 60vh;
     background-color: #BE6CF6;
     display: flex;
@@ -121,12 +121,21 @@ main {
 
     .section-left {
         width: 90%;
-        height: 70vh;
-        margin-right: 5%;
+        height: 60vh;
+    }
+
+    .section-left h1 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
+    .section-left p {
+        font-size: 16px;
+        line-height: 2rem;
     }
 
     .section-left button {
-        height: 15%;
+        height: 10%;
     }
 
     .section-left #gatinho {
@@ -227,6 +236,10 @@ main {
 @media (min-width: 1340px) and (max-width: 1500px){
     .section-left #gatinho {
         top: 35vw;
+    }
+
+    .section-right {
+        min-width: 50%;
     }
 }
 
