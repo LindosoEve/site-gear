@@ -98,7 +98,7 @@ nav .logo img {
 
 @media (max-width: 576px){
     header {
-        height: auto;
+        max-height: 12vh;
         width: 100vw;
     }
 
@@ -112,12 +112,21 @@ nav .logo img {
     }
 
     nav .logo{
-        width: 400vw;
+        min-width: 60vw;
     }
 
     .mobile-menu-icon {
         display: block;
         margin-right: 10%;
+    }
+
+    .mobile-menu {
+        background-color: #fff; /* Fundo branco para contraste */
+        width: 100%; /* Ocupa toda a largura da tela */
+        position: absolute; /* Sobrepõe o conteúdo */
+        top: 60px; /* Ajusta para aparecer abaixo do header */
+        left: 0;
+        z-index: 10;
     }
 
     .mobile-menu-icon button {
@@ -132,11 +141,25 @@ nav .logo img {
         text-align: center;
         padding-bottom: 1rem;
         margin-right: 10%;
+        width: 100%;
     }
 
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
+    }
+
+    .mobile-menu .nav-item a {
+        width: 100%; /* Garante que cada link ocupe toda a largura */
+        padding: 15px 0; /* Adiciona espaço ao redor do texto */
+        font-size: 18px; /* Tamanho de texto ideal para mobile */
+        color: #6A0DAD; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado */
+    }
+    
+    .mobile-menu .nav-item a:hover {
+        background-color: #f5e8fd; /* Destaque ao passar o dedo */
+        color: #BE6CF6;
     }
 
     .open {
@@ -151,7 +174,7 @@ nav .logo img {
     /* Esconda o dropdown-menu no mobile por padrão */
     .mobile-menu #dropdown .dropdown-menu {
          display: none;
-         position: relative; /* Para evitar sobreposição no mobile */
+         position: absolute; /* Para evitar sobreposição no mobile */
          right: -30px;/* Remove alinhamento à direita no mobile *//* Remove alinhamento vertical no mobile */
          margin-top: 10px;
     }
@@ -159,6 +182,11 @@ nav .logo img {
 /* Exiba o dropdown-menu no mobile apenas quando a classe 'open' for adicionada */
     .mobile-menu #dropdown.opens .dropdown-menu {
          display: block;
+    }
+
+    .mobile-menu #dropdown .dropdown-menu a:hover {
+        background-color: #f5e8fd;
+        color: #BE6CF6;
     }
     
 }
