@@ -298,3 +298,9 @@ main {
         display: none;
     }
 }
+
+@media (min-height: 1100px){
+    .section-left {
+        height: 40vh;
+    }
+}

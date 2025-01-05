@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/padex.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script src = "../JavaS/menu.js"></script> -->
+    <title>GEAR</title>
+</head>
+<body>
+    <header> 
+        <nav id = "nav-bar">
+            <div class="logo"> <!--Logo-->
+                <a href="../index.html">
+                    <img src="../imgs/logo_horizontal_preta_sem_fundo.png" alt="">
+                </a> <!--Logo-->
+            </div>
+
+            <ul id = "nav_list"> <!--Itens no cabeçalho-->
+                <li class="nav-item">
+                    <a href="quemsomos.html">Quem somos?</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="area.html">Áreas</a>
+                </li>
+
+                <li class="nav-item" id="dropdown">
+                    <a href="#">Projetos <span class="triangle"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="seguidor.html">Robô seguidor de linha</a></li>
+                        <li><a href="sumo.html">Robô sumo 3kg</a></li>
+                        <li><a href="padex.html">PADEX</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="processo.html">Processo seletivo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick = "menuShow()"><img src="../imgs/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul id = "nav_list"> <!--Itens no cabeçalho-->
+                <li class="nav-item">
+                    <a href="quemsomos.html">Quem somos?</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="area.html">Áreas</a>
+                </li>
+
+                <li class="nav-item" id="dropdown">
+                    <a href="#">Projetos <span class="triangle"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="seguidor.html">Robô seguidor de linha</a></li>
+                        <li><a href="sumo.html">Robô sumo 3kg</a></li>
+                        <li><a href="padex.html">PADEX</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="processo.html">Processo seletivo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>Conheça nossos cursos!</h1>
+
+    <main>
+
+        <div class="cursos">
+            <div class="eletronica">
+                <h3>Eletrônica</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-eletronica.jpg" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="cad">
+                <h3>CAD</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-cad.png" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="impressao">
+                <h3>Impressão 3D</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-impressao.png" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="programacao">
+                <h3>Programação de microcontroladores</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-programacao.jpg" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="pcb">
+                <h3>Prototipagem de placas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-pcb.jpg" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        <div class="cursos">
+            <div class="iot">
+                <h3>Iot com esp32</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Rem necessitatibus reprehenderit quasi corrupti debitis 
+                     nulla atque odio error?</p>
+                <div class="imgs-cursos">
+                    <img src="../imgs/img-iot.jpg" alt="">
+                </div>
+
+                <button class="button">Inscreva-se</button>
+            </div>
+        </div>
+
+        
+
+
+    </main>
+
+    <script src="../JavaS/menu.js"></script>
+</body>
+</html>

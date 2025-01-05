@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../imgs/fundo2_back.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px; /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+.cursos {
+    width: 100%; /* Padrão: ocupa 100% no celular */
+    max-width: 23%; /* Nos tamanhos maiores, limita a largura */
+    background-color: #BE6CF6;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imgs-cursos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.button {
+    width: 60%;
+    min-height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FFF;
+    color: #BE6CF6;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: 0.6s all;
+}
+
+.button:hover {
+    background-color: #9800fd;
+    color: #fff;
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 768px (celulares) */
+@media (max-width: 600px) {
+    .cursos {
+        max-width: 100%; /* Ocupa toda a largura */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .button {
+        width: 80%; /* Botão maior no celular */
+    }
+}
+
+/* Para telas entre 768px e 1024px (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cursos {
+        max-width: 45%; /* Ocupa 2 colunas no tablet */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        width: 70%;
+    }
+}
+
+/* Para telas maiores que 1024px (desktops) */
+@media (min-width: 1024px) {
+    .cursos {
+        max-width: 23%; /* Ocupa 3 colunas no desktop */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        width: 60%;
+    }
+}
+
+
+ /* Responsividade */
+/* 
+ @media (max-width: 576px){
+    main {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .cursos {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        min-height: 20%;
+    }
+ }
+
+ @media (max-width: 800px) {
+    main {
+        flex: ;
+    }
+ } */

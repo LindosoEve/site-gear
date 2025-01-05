@@ -36,6 +36,7 @@ main {
     position: relative;
     width: 90%;
     height: 80vh;
+    max-height: 85;
     display: flex;
     align-items: center;
     justify-content: center;
