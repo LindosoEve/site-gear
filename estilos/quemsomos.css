@@ -7,211 +7,299 @@
 }
 
 body {
-   background-color: #6A0DAD;
+    background-image: url('../imgs/fundo2_back.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-
-h1{
-    position: absolute;
-    color: white;
-    top: 20px;
-    border-bottom: 1px solid white;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  
-}
-
-.diagonal-split {
-    display: flex;
+.container {
     width: 100%;
-    height: 80vh;
-}
-
-.content-img {
-    width: 50%;
-    height: 100%;
-}
-
-.content-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.content-text {
-    position: relative;
-    width: 50%;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+}
+
+
+.section-left{
+    width: 50%;
+    height: auto;
+    background-color:  #6A0DAD;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: #ffffff;
+    justify-content: space-between;
+}
+
+.section-left h1 {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.section-left p {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 50px;
+    letter-spacing: 2px;
+}
+
+.section-left img {
+    width: 500px;
+    align-self: center;
+}
+
+.section-right{
+    width: 50%;
+}
+
+.section-right img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.premiacoes {
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premiacoes h1 {
+    border-bottom: 2px solid #6A0DAD;
+    font-weight: 400;
+}
+
+.premio {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #BE6CF6;
+    border: 3px solid #6A0DAD;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     padding: 20px;
+}
+
+.img-premio {
+    width: 100%;
     text-align: center;
+    margin: 20px;
+}
+
+.img-premio img {
+    max-width: 400px;
+    border: 6px solid #6A0DAD;
+    border-radius: 10px;
+}
+
+.text-premio {
+    width: 55%;
+    text-align: center;
+    margin: 20px;
+    color: #fff
+}
+
+.text-premio h2 {
+    margin-bottom: 25px;
     background-color: #6A0DAD;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    border-radius: 10px;
+    font-weight: 500;
 }
 
-.content-text img{
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    top: 350px;
-    right: 450px;
+.text-premio h3{
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+/* Telas pequenas: Smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilhar as seções */
+        height: auto;
+    }
+
+    .section-left,
+    .section-right {
+        width: 100%; /* Seções ocupam toda a largura */
+        height: auto;
+    }
+
+    .section-left img {
+        width: 300px; /* Reduz tamanho da imagem */
+    }
+
+    .section-right img {
+        height: auto; /* Mantém proporção */
+    }
+
+    .premiacoes h1 {
+        font-size: 1.5rem;
+        margin: 20px; /* Reduz tamanho do título */
+    }
+
+    .premio {
+        width: 9%; /* Ocupa quase toda a largura */
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .img-premio img {
+        max-width: 300px; /* Ajusta tamanho da imagem */
+    }
+
+    .text-premio {
+        width: 70%; /* Expande para ocupar a largura */
+        font-size: 1rem;
+    }
+}
+
+/* Telas médias: Tablets (max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Empilhar as seções */
+        height: auto;
+    }
+
+    .section-left,
+    .section-right {
+        width: 100%; /* Seções ocupam toda a largura */
+        height: auto;
+    }
+
+    .section-left img {
+        width: 400px; /* Tamanho intermediário para tablets */
+    }
+
+    .section-right img {
+        height: auto;
+        border-top: 3px solid #000; /* Mantém proporção */
+    }
+
+    .premio {
+        width: 60%; /* Maior largura para tablets */
+    }
+
+    .img-premio img {
+        max-width: 350px; /* Tamanho intermediário */
+    }
+
+    .text-premio {
+        font-size: 1.1rem;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .container {
+        flex-direction: column; /* Empilhar as seções */
+        height: auto;
+    }
+
+    .section-left,
+    .section-right {
+        width: 100%; /* Seções ocupam toda a largura */
+        height: auto;
+    }
+
+    .section-left img {
+        width: 400px; /* Tamanho intermediário para tablets */
+    }
+
+    .section-right img {
+        height: auto;
+        border-top: 3px solid #000; /* Mantém proporção */
+    }
+
+    .premio {
+        width: 50%; /* Maior largura para tablets */
+    }
+
+    .img-premio img {
+        max-width: 350px; /* Tamanho intermediário */
+    }
+
+    .text-premio {
+        font-size: 1.1rem;
+        width: 70%;
+    }
 }
 
 
-/* Responsividade */
-
-@media (max-width: 600px){
-    main{
-        flex-direction: column;
+/* Telas muito pequenas: Smartphones pequenos (max-width: 480px) */
+@media (max-width: 480px) {
+    .section-left p {
+        padding: 20px; /* Reduz padding para evitar quebras */
+        font-size: 0.9rem; /* Reduz tamanho da fonte */
     }
 
-    .diagonal-split {
-        flex-direction: column;
+    .section-left img {
+        width: 250px; /* Reduz imagem do gatinho */
     }
 
-    .content-img {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100%;
+    .premiacoes h1 {
+        font-size: 1.2rem; /* Texto menor para o título */
     }
 
-    .content-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
+    .premio {
+        width: 85%; /* Ocupa quase toda a largura */
+        margin-top: 20px;
     }
 
-    .content-text {
-        position: absolute;
-        top: 100px;
-        width: 80vw;
-        height: 70%;
-        margin-top: 20vw;
-        margin-left: 8vw;
-        border-radius: 20px;
-        background-color: #6a0dadd0;
-
+    .img-premio img {
+        max-width: 250px; /* Ajusta tamanho da imagem */
     }
 
-    .content-text p {
-       text-align: justify;
+    .text-premio {
+        max-width: 75%;
     }
 
-    h1 {
-        font-size: 30px;
+    .text-premio h2 {
+        font-size: 1rem; /* Ajusta título menor */
     }
 
-    .content-text img {
+    .text-premio h3 {
+        font-size: 0.9rem; /* Ajusta texto menor */
+    }
+}
+
+/* Telas grandes: Desktop grandes (min-width: 1440px) */
+@media (min-width: 1440px) {
+    .container {
+        width: 100%; /* Reduz a largura total para desktops grandes */
+        margin: 0 auto; /* Centraliza o container */
+    }
+
+    .premio {
+        width: 30%; /* Reduz largura dos cartões */
+    }
+
+    .img-premio img {
+        max-width: 350px; /* Ajusta tamanho maior */
+    }
+
+    .text-premio {
+        font-size: 1.2rem; /* Texto um pouco maior */
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 870px){
+    .section-left img {
+        max-width: 50%; /* Reduz imagem do gatinho */
+    }
+}
+
+@media (min-width: 1440px) and (max-height: 750px){
+    .section-left img {
         display: none;
     }
-
-    footer {
-        display: none;
-    }
-
-
 }
 
-@media (min-width: 601px) and (max-width: 1000px){
-    main{
-        flex-direction: column;
-    }
-
-    .diagonal-split {
-        flex-direction: column;
-    }
-
-    .content-img {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100%;
-    }
-
-    .content-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .content-text {
-        position: absolute;
-        top: 100px;
-        width: 80vw;
-        height: 70%;
-        margin-top: 10vw;
-        margin-left: 8vw;
-        border-radius: 20px;
-        background-color: #6a0dadd0;
-
-    }
-
-    .content-text p {
-       text-align: justify;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .content-text img {
-        top: 80%;
-        left: 25%;
-    }
-
-
-}
-
-
-@media (min-width: 1001px) and (max-width: 1400px){
-    .content-text{
-        text-align: justify;
-    }
-    .content-text img {
-        top: 70%;
-        left: -20%;
-
-    }
-}
-
-@media (min-width: 1401px) and (max-width: 1900px){
-    .content-text{
-        text-align: justify;
-    }
-    .content-text img {
-        top: 70%;
-        left: -10%;
-        width: 30vw;
-        height: 40vh;
-    }
-}
-
-@media (min-width: 1901px) and (max-width: 2100px){
-    .content-text{
-        text-align: justify;
-    }
-    .content-text img {
-        top: 70%;
-        left: -10%;
-        width: 30vw;
-        height: 40vh;
-    }
-}
-
-@media (max-height: 700px) {
-    .content-text {
-        font-size: 16px;
-    }
-}

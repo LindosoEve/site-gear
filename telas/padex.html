@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../JavaS/padex.js" defer></script>
     <!-- <script src = "../JavaS/menu.js"></script> -->
     <title>GEAR</title>
 </head>
@@ -90,9 +91,9 @@
         <div class="cursos">
             <div class="eletronica">
                 <h3>Eletrônica</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Descubra os segredos da eletrônica básica e aprenda, 
+                    de forma prática e simples, a montar seus próprios circuitos
+                     e dar vida a projetos incríveis!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-eletronica.jpg" alt="">
                 </div>
@@ -104,9 +105,9 @@
         <div class="cursos">
             <div class="cad">
                 <h3>CAD</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Aprenda a dominar ferramentas de CAD e transforme suas ideias 
+                    em projetos detalhados e precisos, prontos para se tornarem
+                     realidade!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-cad.png" alt="">
                 </div>
@@ -118,9 +119,9 @@
         <div class="cursos">
             <div class="impressao">
                 <h3>Impressão 3D</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Domine a impressão 3D e descubra como criar peças únicas, 
+                    personalizadas e funcionais, trazendo suas ideias do digital 
+                    para o físico!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-impressao.png" alt="">
                 </div>
@@ -132,9 +133,9 @@
         <div class="cursos">
             <div class="programacao">
                 <h3>Programação de microcontroladores</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Desvende o universo da programação de microcontroladores e 
+                    aprenda a dar inteligência e funcionalidade aos seus projetos 
+                    eletrônicos!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-programacao.jpg" alt="">
                 </div>
@@ -146,9 +147,9 @@
         <div class="cursos">
             <div class="pcb">
                 <h3>Prototipagem de placas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Domine a arte da prototipagem de PCBs e transforme conceitos
+                     eletrônicos em placas reais, prontas para fazer seus projetos 
+                     ganharem vida!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-pcb.jpg" alt="">
                 </div>
@@ -160,9 +161,8 @@
         <div class="cursos">
             <div class="iot">
                 <h3>Iot com esp32</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Rem necessitatibus reprehenderit quasi corrupti debitis 
-                     nulla atque odio error?</p>
+                <p>Descubra como conectar o mundo físico ao digital com o ESP32, 
+                    criando projetos IoT inteligentes e totalmente conectados!</p>
                 <div class="imgs-cursos">
                     <img src="../imgs/img-iot.jpg" alt="">
                 </div>
@@ -171,7 +171,11 @@
             </div>
         </div>
 
-        
+        <div id="custom-alert" class="custom-alert">
+            <p>Curso fechado no momento!</p>
+            <i class="fa-regular fa-face-sad-tear"></i>
+            <button onclick="closeAlert()">OK</button>
+        </div>          
 
 
     </main>

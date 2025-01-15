@@ -142,7 +142,7 @@ h1 {
 @media (min-width: 601px) and (max-width: 900px){
     .whatsapp {
         width: 55%;
-        height: 10vh;
+        height: 8vh;
     }
 
     .whatsapp h2 {
@@ -152,14 +152,15 @@ h1 {
     }
 
     .whatsapp button {
-        width: 20%;
-        height: 6vh;
+        width: 15%;
+        height: 5vh;
         border-radius: 15px;
+        max-height: 9vh;
     }
 
     .email {
         width: 55%;
-        height: 10vh;
+        height: 8vh;
     }
 
     .email h2 {
@@ -169,13 +170,13 @@ h1 {
     }
 
     .email button {
-        width: 20%;
-        height: 6vh;
+        width: 15%;
+        height: 5vh;
         border-radius: 15px;
     }
 }
 
-@media (min-width: 901px) and (max-width: 1450px){
+@media (min-width: 901px) and (max-width: 1150px){
     .whatsapp {
         width: 40%;
         height: 10vh;
@@ -208,6 +209,83 @@ h1 {
         width: 20%;
         height: 6vh;
         border-radius: 15px;
+    }
+}
+
+
+@media (min-width: 1151px) and (max-width: 1450px){
+    .whatsapp {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .whatsapp h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .whatsapp button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+
+    .email {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .email h2 {
+        padding: 0.5rem;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .email button {
+        width: 20%;
+        height: 6vh;
+        border-radius: 15px;
+    }
+}
+
+@media (min-height: 900px) and (max-height: 1200px){
+    .whatsapp{
+        height: 13vh;
+    }
+
+    .whatsapp button {
+        min-width: 5vw;
+        max-height: 8vh;
+    }
+
+    .email{
+        height: 13vh;
+    }
+
+    .email button {
+        min-width: 5vw;
+        max-height: 8vh;
+    }
+}
+
+@media (min-height: 1201px) and (max-height: 1500px){
+    .whatsapp{
+        height: 10vh;
+    }
+
+    .whatsapp button {
+        min-width: 5vw;
+        max-height: 6vh;
+    }
+
+    .email{
+        height: 10vh;
+    }
+
+    .email button {
+        min-width: 5vw;
+        max-height: 6vh;
     }
 }
 

@@ -82,6 +82,50 @@ p {
     color: #fff;
 }
 
+.custom-alert {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .custom-alert i {
+    font-size: 40px; /* Ajuste o tamanho do ícone */
+    margin-bottom: 10px; /* Espaço entre a carinha e o texto */
+  }
+
+
+  .custom-alert button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .custom-alert button:hover {
+    background-color: #45a049;
+  }
+  
+  .custom-alert.active {
+    display: flex; /* Mostra o modal ao adicionar a classe 'active' */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 /* Media Queries para responsividade */
 
 /* Para telas menores que 768px (celulares) */
@@ -128,6 +172,8 @@ p {
         width: 60%;
     }
 }
+
+
 
 
  /* Responsividade */
