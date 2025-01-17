@@ -80,8 +80,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
-    background-color: #BE6CF6;
-    border: 3px solid #6A0DAD;
+    background-image: url('../imgs/fundo_trofeu.jpg');
+    border: 3px solid #000;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -95,11 +95,15 @@ body {
 
 .img-premio img {
     max-width: 400px;
-    border: 6px solid #6A0DAD;
+    border: 6px solid #000;
     border-radius: 10px;
 }
 
 .text-premio {
+    border: 3px solid #000;
+    background-color: #ad6b0ef1;
+    border-radius: 20px;
+    padding: 20px;
     width: 55%;
     text-align: center;
     margin: 20px;
@@ -107,6 +111,7 @@ body {
 }
 
 .text-premio h2 {
+    border: 2px solid #000;
     margin-bottom: 25px;
     background-color: #6A0DAD;
     border-radius: 10px;

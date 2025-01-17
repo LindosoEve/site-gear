@@ -49,10 +49,15 @@ main {
     font-size: 20px;
 }
 
+.section-left a {
+    width: 100%;
+    text-align: center;
+}
+
 .section-left button{
     position: relative;
     width: 50%;
-    height: 7vh;
+    min-height: 7vh;
     background-color: #ffffffc6;
     cursor: pointer;
     margin-top: 7%;
@@ -121,7 +126,7 @@ main {
 
     .section-left {
         width: 90%;
-        height: 60vh;
+        height: auto;
     }
 
     .section-left h1 {
@@ -214,8 +219,16 @@ main {
 }
 
 @media (min-width:1050px) and (max-width: 1200px) {
+    .section-left {
+        max-width: 55%;
+    }
+    
     .section-left #gatinho {
         top: 40vw;
+    }
+
+    .section-right {
+        max-width: 700px;
     }
 }
 
@@ -230,6 +243,10 @@ main {
 
     .section-left #gatinho {
         top: 40vw;
+    }
+
+    .section-right {
+        width: 50%;
     }
 }
 
@@ -263,8 +280,8 @@ main {
     }
 
     .section-left {
-        width: 80%;
-        height: 80vh;
+        max-width: 80%;
+        height: auto;
         margin-right: 5%;
         margin-left: 5%;
     }
@@ -287,20 +304,40 @@ main {
 
 }
 
- @media (min-height: 701px) and (max-height: 799px){
+@media (min-height: 701px) and (max-height: 799px){
     .section-left{
-        height: 70vh;
+       height: auto;
+    }
+
+    .section-left #gatinho {
+     display: none;
     }
 } 
 
-@media (min-height: 701px) and (max-height: 750px) and (min-width: 791px){
-    .section-left #gatinho {
-        display: none;
+@media (min-height: 800px) and (max-height: 1099px){
+    .section-left{
+       height: auto;
     }
-}
+
+    .section-left #gatinho {
+     display: none;
+    }
+
+    .section-right {
+        max-height: 60vh;
+        /* height: auto; */
+        max-height: 50vh;
+    }
+} 
+
 
 @media (min-height: 1100px){
     .section-left {
-        height: 40vh;
+        height: auto;
+    }
+
+    .section-right {
+        height: auto;
+        max-width: 700px;
     }
 }
