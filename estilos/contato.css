@@ -97,11 +97,17 @@ h1 {
     .whatsapp, .email {
         width: 90%;
         height: auto;
+        font-size: 0.7rem;
     }   
 
     .whatsapp button {
         max-height: 50px;
         max-width: 12vw;
+        margin-right: 15px;
+    }
+
+    .email h3 {
+        margin-right: 15px;
     }
 }
 

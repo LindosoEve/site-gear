@@ -34,6 +34,8 @@ body {
     margin-top: 20px;
     color: #fff;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .section-left p {
@@ -143,7 +145,8 @@ body {
     }
 
     .section-right img {
-        height: auto; /* Mantém proporção */
+        height: auto;
+        border-top: 2px solid #000 /* Mantém proporção */
     }
 
     .premiacoes h1 {
@@ -292,7 +295,8 @@ body {
     }
 
     .text-premio {
-        font-size: 1.2rem; /* Texto um pouco maior */
+        font-size: 1.2rem; 
+        width: 70%;/* Texto um pouco maior */
     }
 }
 
